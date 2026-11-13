@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+
+body > table {
+    width: 80%;
+    margin: 30px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+table.list {
+    width: 100%;
+}
+
+td, th {
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    padding: 14px;
+}
+
+th {
+    background: #6c63ff;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8ff;
+}
+
+tr:hover {
+    background-color: #eeeeff;
+}
+
+input[type=text],
+input[type=number] {
+    width: 100%;
+    padding: 13px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+    background: #fafaff;
+}
+
+input[type=text]:focus,
+input[type=number]:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 6px rgba(108, 99, 255, 0.2);
+    background: white;
+}
+
+input[type=submit] {
+    width: 30%;
+    background: #6c63ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input[type=submit]:hover {
+    background: #5148d8;
+    transform: translateY(-2px);
+}
+
+form div.form-action-buttons {
+    text-align: right;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #6c63ff;
+    margin-right: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #4138b8;
+    text-decoration: underline;
+}
+
+label.validation-error {
+    color: red;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    body > table {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 100%;
+    }
+}
